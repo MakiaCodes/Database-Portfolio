@@ -1,0 +1,106 @@
+[{
+  "_id": "order-001",
+  "buyerId": "buyer-001",
+  "createdAt": {
+    "$date": "2026-01-15T10:00:00.000Z"
+  },
+  "currency": "NGN",
+  "deliveries": [
+    {
+      "farmerId": "farmer-001",
+      "status": "pending"
+    },
+    {
+      "farmerId": "farmer-002",
+      "status": "pending"
+    }
+  ],
+  "delivery": {
+    "addressLine": "14 Market Road",
+    "city": "Abeokuta",
+    "region": "Ogun",
+    "countryCode": "NG"
+  },
+  "farmerPayouts": [
+    {
+      "farmerId": "farmer-001",
+      "farmName": "Green Valley Farms",
+      "grossAmount": {
+        "$numberDecimal": "9000.00"
+      },
+      "commissionRate": {
+        "$numberDecimal": "0.0100"
+      },
+      "commissionAmount": {
+        "$numberDecimal": "90.00"
+      },
+      "netAmount": {
+        "$numberDecimal": "8910.00"
+      },
+      "status": "paid"
+    },
+    {
+      "farmerId": "farmer-002",
+      "farmName": "Sunrise Produce Farm",
+      "grossAmount": {
+        "$numberDecimal": "5000.00"
+      },
+      "commissionRate": {
+        "$numberDecimal": "0.0100"
+      },
+      "commissionAmount": {
+        "$numberDecimal": "50.00"
+      },
+      "netAmount": {
+        "$numberDecimal": "4950.00"
+      },
+      "status": "paid"
+    }
+  ],
+  "items": [
+    {
+      "listingId": "listing-001",
+      "productId": "product-tomatoes",
+      "productName": "Tomatoes",
+      "farmerId": "farmer-001",
+      "farmName": "Green Valley Farms",
+      "quantity": {
+        "$numberDecimal": "5.000"
+      },
+      "unit": "kg",
+      "unitPrice": {
+        "$numberDecimal": "1800.00"
+      },
+      "lineTotal": {
+        "$numberDecimal": "9000.00"
+      }
+    },
+    {
+      "listingId": "listing-002",
+      "productId": "product-yam",
+      "productName": "Yam",
+      "farmerId": "farmer-002",
+      "farmName": "Sunrise Produce Farm",
+      "quantity": {
+        "$numberDecimal": "2.000"
+      },
+      "unit": "crate",
+      "unitPrice": {
+        "$numberDecimal": "2500.00"
+      },
+      "lineTotal": {
+        "$numberDecimal": "5000.00"
+      }
+    }
+  ],
+  "payment": {
+    "amount": {
+      "$numberDecimal": "14000.00"
+    },
+    "status": "paid",
+    "paidAt": {
+      "$date": "2026-01-15T10:05:00.000Z"
+    }
+  },
+  "status": "paid"
+}]
